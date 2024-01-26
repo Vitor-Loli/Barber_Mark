@@ -4,7 +4,7 @@ class dataBase {
     private $conexao;
     private $host = 'localhost';
     private $porta = '3306';
-    private $db_nome = 'db_ogbarbearia';
+    private $db_nome = 'db_barbermark';
     private $usuario = 'root';
     private $senha = '';
 
