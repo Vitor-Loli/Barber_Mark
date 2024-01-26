@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/sistema.css">
-    <title>Sistema OG</title>
+    <title>Sistema</title>
 
     <script src="assets/js/burguer.js" defer></script>
 
@@ -39,8 +39,8 @@
             <a href="inicio.html"><img src="assets/images/logo.png" alt="Logo" class="logo"></a>
 
             <div class="description">
-                <h1 class="name">Barbearia</h1>
-                <h3 class="job">Otávio Gabiatti</h3>
+                <h1 class="name">Barber Mark</h1>
+                <h3 class="job">Agendamento</h3>
             </div>
             
         </header>

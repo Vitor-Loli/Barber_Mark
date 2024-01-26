@@ -25,7 +25,7 @@
         <div class="logo">
             <a href="#">
                 <img src="assets/images/logo.png">
-                <h3>Otávio Gabiatti</h3>
+                <h3>Barber Mark</h3>
             </a>
 
         </div>
