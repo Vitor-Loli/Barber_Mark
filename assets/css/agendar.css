@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;700&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    transition: ease 0.3s;
+}
+
+.cabecalho{
+    width: auto;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+
+.cabecalho .logo a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.cabecalho .logo img{
+    width: 150px;
+    filter: invert(100%);
+}
+
+.cabecalho .menu{
+    position: absolute;
+    right: 5rem;
+}
+
+.cabecalho .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cabecalho .menu ul li{
+    font-size: 120%;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 2px; 
+}
+
+.cabecalho .menu ul .optAgenda{
+    background-color: #b7410e;
+    color: #ffffff;
+}
+
+.cabecalho .menu ul li:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+
+.agenda{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.agenda .descricao{
+    width: 25%;
+    height: 40%;
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px #808080;
+}
+
+.agenda .descricao h3{
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.agenda .descricao p{
+    font-size: 120%;
+    font-weight: 300;
+}
+
+.agenda .form{
+    width: 25%;
+    height: 40%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px #808080;
+}
+
+.agenda .form .inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.agenda .form .inputs input, select{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.agenda .form .horas{
+    overflow-y: auto;
+}
+
+.agenda .total{
+    width: 25%;
+    height: 40%;
+    background-color: #b7410e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px #808080;
+}
+
+.agenda .infos{
+    width: 82%;
+    height: auto;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 5px #808080;
+    text-align: center;
+}
+
+.desmarcar{
+    color: #b7410e;
+}
+
+table{
+    border: 1px solid #000000;
+    text-align: center;
+    width: 90%;
+}
+
+table td{
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    width: 10%;
+}
+
+table th{
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    background-color: #b7410e;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 900px){
+    .cabecalho{
+        margin-bottom: 5rem;
+    }
+    
+    .agenda{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .agenda .descricao{
+        width: 50%;
+    }
+
+    .agenda .form{
+        width: 50%;
+    }
+
+    .agenda .total{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .agenda .infos{
+        width: 50%;
+    }
+
+    .agenda .form .inputs{
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho .logo a h3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .agenda .descricao h3{
+        font-size: 120%;
+        font-weight: 500;
+    }
+    
+    .agenda .descricao p{
+        font-size: 90%;
+        font-weight: 300;
+    }
+
+    .agenda .infos{
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;700&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    transition: ease 0.3s;
+}
+
+.cabecalho{
+    width: auto;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+
+.cabecalho .logo a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.cabecalho .logo img{
+    width: 150px;
+    filter: invert(100%);
+}
+
+.cabecalho .menu{
+    position: absolute;
+    right: 5rem;
+}
+
+.cabecalho .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cabecalho .menu ul li{
+    font-size: 120%;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 2px; 
+}
+
+.cabecalho .menu ul .optAgenda{
+    background-color: #b7410e;
+    color: #ffffff;
+}
+
+.cabecalho .menu ul li:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+.cabecalho .hamburguer{
+    display: none;
+}
+
+.cabecalho .menu-mobile{
+    width: 0px;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #000000bb;
+    z-index: 9999999;
+}
+
+.cabecalho .menu-mobile ul{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.cabecalho .menu-mobile ul li a{
+    font-size: 20px;   
+}
+
+.cabecalho .menu-mobile ul li:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+.cabecalho .menu-mobile ul .optAgenda{
+    background-color: #b7410e;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.apresentacao{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/background.png);
+}
+
+.apresentacao .informacoes{
+    position: absolute;
+    top: 40%;
+    left: 5rem;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.apresentacao .informacoes h1{
+    font-size: 400%;
+    font-weight: 700;
+}
+
+.apresentacao .informacoes p{
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.trabalhos{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.trabalhos .opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.trabalhos .opcoes p{
+    font-size: 110%;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.trabalhos .opcoes a:hover{
+    border-bottom: 5px solid #b7410e;
+}
+
+
+.trabalhos h1{
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.trabalhos .cards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trabalhos .cards:hover :not(:hover){
+    opacity: 0.3;
+}
+
+.trabalhos .cards .card1:hover, .card2:hover{
+    scale: 1.1;
+}
+
+.trabalhos .cards .card1{
+    width: 30%;
+    height: 80%;
+    border: 1px solid #000000;
+}
+
+.trabalhos .cards .card2{
+    width: 20%;
+    height: 70%;
+    border: 1px solid #000000;
+}
+
+.agenda{
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../images/background.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.agenda .horarios{
+    width: 20%;
+    height: 20rem;
+    box-shadow: 5px 5px 5px #808080;
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agenda .horarios h3{
+    text-align: center;
+}
+
+.agenda .horarios .tituloHora{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+.agenda .horarios .tt{
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.agenda .horarios .hrs{
+    margin-left: 2rem;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.agenda .horarios .dias{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.agenda .agendamento{
+    width: 30%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #808080;
+}
+
+.agenda .agendamento h3{
+    color: #000000;
+    font-size: 300%;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.agenda .agendamento .inputs{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.agenda .agendamento .texts{
+    background-color: #ffffff;
+    color: #808080;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.agenda .agendamento .texts:focus{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.agenda .agendamento .btn{
+    background-color: #b7410e;
+    color: #ffffff;
+}
+
+.agenda .agendamento .btn:hover{
+    box-shadow: 2px 2px 2px #ffffff;
+    transform: scale(0.98);
+}
+
+.rodape{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.rodape img{
+    width: 30%;
+}
+
+.rodape .infos{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 115%;
+    font-weight: 500;
+}
+
+.rodape .infos a:hover{
+    border-bottom: 1px solid #000000;
+}
+
+.rodape .redes-sociais{
+    width: 30%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.rodape .redes-sociais a{
+    font-size: 180%;
+    font-weight: 700;
+}
+
+.madeby{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.madeby h1{
+    font-size: 110%;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+    .cabecalho .hamburguer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 5rem;
+    }
+
+    .cabecalho .hamburguer i{
+        font-size: 250%;
+        font-weight: 400;
+    }
+
+    .cabecalho .hamburguer:hover{
+        color: #b7410e;
+    }
+
+    .cabecalho .menu{
+        display: none;
+    }
+
+    .apresentacao .informacoes h1{
+        font-size: 200%;
+        font-weight: 700;
+    }
+
+    .apresentacao{
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-image: url(../images/background-menor.png);
+    }
+
+    .trabalhos .carrossel{
+        box-shadow: 5px 5px 5px #808080;
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+    }
+    
+    .trabalhos .carrossel .container img{
+        object-fit: contain;
+        width: 350px;
+        height: 350px;
+    }
+
+    .agenda{
+        flex-direction: column;    
+    }
+
+    .agenda .horarios{
+        width: 70%;
+        height: 20rem;       
+    }
+
+    .agenda .agendamento{
+        width: 70%;
+        height: 20rem;
+    }
+
+    .rodape .redes-sociais a{
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho .logo a h3{
+        display: none;
+    }
+
+    .cabecalho .hamburguer{
+        right: 2rem;
+    }
+
+    .trabalhos .opcoes{
+        gap: 2rem;
+    }
+
+    .trabalhos .opcoes p{
+        font-size: 80%;
+    }
+
+    .trabalhos h1{
+        font-size: 120%;
+    }
+
+    .trabalhos .cards{
+        gap: 0.8rem;
+    }
+
+    .trabalhos .cards .card1{
+        width: 40%;
+        height: 90%;
+    }
+
+    .trabalhos .cards .card2{
+        width: 20%;
+        height: 70%;
+    }
+
+    .apresentacao{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/background-menor.png);
+    }
+
+    .apresentacao .informacoes{
+        left: 2rem;
+    }
+    
+    .apresentacao .informacoes h1{
+        font-size: 150%;
+        font-weight: 700;
+    }
+
+    .apresentacao .informacoes p{
+        font-size: 80%;
+        font-weight: 500;
+    }
+
+    .agenda .horarios .tituloHora{
+        font-size: 110%;
+        font-weight: 700;
+    }
+    
+    .agenda .horarios .tt{
+        font-size: 90%;
+        font-weight: 500;
+    }
+    
+    .agenda .horarios .hrs{
+        font-size: 90%;
+    }
+    
+    .agenda .horarios .dias{
+        font-size: 90%;
+    }
+
+    .agenda .agendamento h3{
+       font-size: 200%;
+    }
+    .rodape .redes-sociais a{
+        font-size: 80%;
+    }
+
+    .rodape .infos{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .apresentacao .informacoes h1{
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    .apresentacao{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background-image: url(../images/background-menor.png);
+    }
+
+    .apresentacao .informacoes p{
+        font-size: 50%;
+        font-weight: 500;
+    }
+
+    .agenda .agendamento h3{
+        font-size: 150%;
+    }
+
+    .agenda .horarios .tituloHora{
+        font-size: 90%;
+        font-weight: 700;
+    }
+    .rodape .redes-sociais a{
+        font-size: 50%;
+    }
+}

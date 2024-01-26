@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;700&family=Poppins:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.login_div{
+    width: 25rem;
+    height: 30rem;
+    border: 1px solid #808080;
+    background-color: #ffffff;
+    border-radius: 25px 5px;
+}
+
+.titulo_login{
+    font-size: 250%;
+    text-align: center;
+    margin: 40px;
+}
+
+.input_group{
+    padding:1rem;
+}
+
+.inputs{
+    text-align: center;    
+}
+
+.input_login{
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 0.5px solid #000000;
+}
+
+.label_login{
+    text-align: start;
+    text-align: center;
+    padding-left:2.2rem;
+}
+
+.botao_div{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.botao_enviar{
+    width: 50%;
+    height: 2rem;
+    border: none;
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+.botao_enviar:hover{
+    background-color: #969595;
+}
