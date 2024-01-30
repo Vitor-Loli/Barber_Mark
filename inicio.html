@@ -84,7 +84,7 @@
             <form action="agendar.php?view=data" method="POST" class="agendamento">
                 <h3>Agende Seu Horário!</h3>
                 <input type="text" placeholder="Informe Seu Nome" class="inputs texts" name="txtNome" required>
-                <input type="tel" placeholder="Informe Seu Telefone" class="inputs texts" name="txtTelefone" required>
+                <input type="tel" placeholder="Informe Seu Telefone" class="inputs texts" name="txtTelefone" oninput="formatarTelefone(this)" maxlength="15" required>
                 <input type="submit" value="Agendar!" class="inputs btn">
             </form>
 
@@ -172,6 +172,22 @@
                 cardDir.setAttribute('src', 'assets/images/img (5).jpeg')
                 cardEsq.setAttribute('src', 'assets/images/img (3).jpeg')  
         }
+    }
+
+    function formatarTelefone(input) {
+      // Remove caracteres não numéricos
+      let numero = input.value.replace(/\D/g, '');
+
+      // Formatar o número como (xx) xxxxx-xxxx
+      if (numero.length >= 2) {
+        input.value = `(${numero.substring(0, 2)}`;
+      }
+      if (numero.length > 2) {
+        input.value += `) ${numero.substring(2, 7)}`;
+      }
+      if (numero.length > 7) {
+        input.value += `-${numero.substring(7, 11)}`;
+      }
     }
 </script>
 </html>

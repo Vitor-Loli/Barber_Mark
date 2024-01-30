@@ -17,7 +17,7 @@
     $parametros = [$id];
     $dataBase->executeCommand($sql, $parametros);
 
-    if($desmarcar = 1){
+    if($desmarcar != ""){
         print " <script>
             alert('Horário excluido com sucesso!')
             window.location = '../inicio.html'

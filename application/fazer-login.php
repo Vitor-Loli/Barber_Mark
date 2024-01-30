@@ -22,7 +22,7 @@
     if(empty($dados)){
         print  "<script> 
             alert('Usuário ou senha incorretos, por favor verifique!')
-            window.location = '../index.html'
+            window.location = '../inicio.html'
         </script>";
     } else{
         session_start();
